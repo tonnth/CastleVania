@@ -2,39 +2,35 @@
 #define _SIMON_H_
 
 #include <d3dx9.h>
-
-//#include "game.h"
 #include "GSprite.h"
+#include "Object.h"
 
-class Simon
+#define SIMON_IMAGE_FILE "Resources/5.png"
+#define SIMON_TREND 0
+#define SIMON_FRAME 100
+#define SIMON_STOP_IMAGE 3
+
+#define SIMON_VX 1.0f
+#define SIMON_VX_STAIR 43	
+#define SIMON_VY_STAIR 43
+#define SIMON_VJUMP 450
+#define SIMON_GRAVITY 20
+#define SIMON_FALL 180
+#define SIMON_VX_DAMAGED 150
+#define SIMON_VY_DAMAGED 450
+
+class Simon : public Object
 {
-private:
-	float x;
-	float y;
-
-	float vX;
-	float vY;
-
-	int moving;
-	int Huong; //trai = 0 , phai = 1
-
 public:
 	Simon();
-	Simon(int x, int y);
-	Simon(int x, int y, int huong);
+	Simon(float x, float y);
 	~Simon();
-	GSprite *SimonSprite;
-	int GetX();
-	int GetY();
-	int GetSpeed();
-	void ChangeVX(int s);
-	void ChangeVY(int s);
-	void Update(int t);
-	float GetVX();
-	float GetVY();
-	int GetMoving();
-	void SetMoving(int a);
-	int GetHuong();
-	void SetHuong(int a);
+
+	virtual void Update(int t);
+	virtual void DrawObject();
+
+	void MoveLeft();
+	void MoveRigh();
+	void Stop();
 };
 #endif

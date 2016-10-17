@@ -3,12 +3,14 @@
 
 #include "Game.h"
 #include "GSprite.h"
+#include "Object.h"
 #include "Simon.h"
 
 class SceneMain: public CGame
 {
 public: 	
 	Simon *simon;
+
 	SceneMain(int _nCmdShow);
 	~SceneMain();	
 	

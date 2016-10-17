@@ -1,76 +1,28 @@
 #include "Simon.h"
-#define SIMON_IMAGE_FILE "Resources/5.png"
-#define SPEED 1.0f
-#define FRAME 100
 
-Simon::Simon()
-{
-	x = G_ScreenWidth / 2;
-	y = G_ScreenHeight / 2;
-
-	vY = 0.0f;
-	vX = SPEED;
-	
-	SimonSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 4, 1, 4), FRAME);
-	moving = 0;
-	Huong = 0;
-}
-
-Simon::Simon(int x,int y)
-{
-	this -> x = x;
-	this -> y = y;
-
-	vY = 0.0f;
-	vX = SPEED;
-
-	SimonSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 4, 1, 4),FRAME);
-	moving = 0;
-	Huong = 0;
-}
-
-Simon::Simon(int x, int y, int huong)
+Simon::Simon(float x, float y)
 {
 	this->x = x;
 	this->y = y;
 
-	vY = 0.0f;
-	vX = SPEED;
-
-	SimonSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 4, 1, 4), FRAME);
-	moving = 0;
-	this->Huong = huong;
-}
-
-Simon::~Simon()
-{
-	delete SimonSprite;
-}
-
-int Simon::GetX()
-{
-	return x;
-}
-
-int Simon::GetY()
-{
-	return y;
-}
-
-void Simon::ChangeVX(int s)
-{
-	vX = s;
-}
-
-void Simon::ChangeVY(int s)
-{
-	vY = s;
+	Vx = 0;
+	Vy = 0;
+	
+	ObjectSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 4, 1, 4), SIMON_FRAME);
+	
+	Speed = SIMON_VX;
+	IsMoving = 0;
+	Trend = SIMON_TREND;
 }
 
 void Simon::Update(int t)
 {
-	x += vX;
-	y += vY;
+	x += Vx;
+	y += Vy;
+
+	if (IsMoving != 0) ObjectSprite->Update(t);
+	else ObjectSprite->SelectIndex(SIMON_STOP_IMAGE);
+
 	/*if (y + height > G_ScreenHeight)
 		y = G_ScreenHeight - height;
 	else if (y < 0)
@@ -78,37 +30,27 @@ void Simon::Update(int t)
 */
 }
 
-int Simon::GetSpeed()
+void Simon::DrawObject()
 {
-	return SPEED;
+	if (Trend == 0) ObjectSprite->Draw(x, y);
+	else ObjectSprite->DrawFlipX(x, y);
 }
 
-float Simon::GetVX()
+void Simon::MoveLeft()
 {
-	return vX;
+	Vx = -Speed;
+	IsMoving = 1;
+	Trend = 0;
+}
+void Simon::MoveRigh()
+{
+	Vx = Speed;
+	IsMoving = 1;
+	Trend = 1;
+}
+void Simon::Stop()
+{
+	Vx = 0;
+	IsMoving = 0;
 }
 
-float Simon::GetVY()
-{
-	return vY;
-}
-
-int Simon::GetMoving()
-{
-	return moving;
-}
-
-void Simon::SetMoving(int a)
-{
-	moving = a;
-}
-
-int Simon::GetHuong()
-{
-	return Huong;
-}
-
-void Simon::SetHuong(int a)
-{
-	Huong = a;
-}
