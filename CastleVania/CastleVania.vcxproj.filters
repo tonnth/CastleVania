@@ -70,6 +70,15 @@
     <ClCompile Include="Matrix.cpp">
       <Filter>Matrix</Filter>
     </ClCompile>
+    <ClCompile Include="Bat.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="IronMan.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Medusa.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -110,6 +119,15 @@
     </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Bat.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IronMan.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Medusa.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

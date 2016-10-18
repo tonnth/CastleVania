@@ -8,9 +8,9 @@ Simon::Simon()
 
 	Vx = 0;
 	Vy = 0;
-	
-	ObjectSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 4, 1, 4), SIMON_FRAME);
-	
+
+	ObjectSprite = new GSprite(new GTexture(SIMON_IMAGE_FILE, 8, 3, 24), SIMON_FRAME);
+
 	Speed = SIMON_VX;
 	IsMoving = 0;
 	Trend = SIMON_TREND;
@@ -21,14 +21,18 @@ void Simon::Update(int t)
 	x += Vx;
 	y += Vy;
 
-	if (IsMoving != 0) ObjectSprite->Update(t);
+	if (IsMoving != 0)
+	{
+		if (ObjectSprite->_index > 3) ObjectSprite->_index = 0;
+		ObjectSprite->Update(t);
+	}
 	else ObjectSprite->SelectIndex(SIMON_STOP_IMAGE);
 
 	/*if (y + height > G_ScreenHeight)
-		y = G_ScreenHeight - height;
+	y = G_ScreenHeight - height;
 	else if (y < 0)
-		y = 0;
-*/
+	y = 0;
+	*/
 }
 
 void Simon::DrawObject()

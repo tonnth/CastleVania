@@ -5,17 +5,27 @@
 #include "GSprite.h"
 #include "Object.h"
 #include "Simon.h"
+
+#include "Medusa.h"
+#include "Bat.h"
+#include "IronMan.h"
+
 #include "Matrix.h"
 
-class SceneMain: public CGame
+	class SceneMain : public CGame
 {
-public: 	
+public:
 	Simon *simon;
+
+	Medusa *medusa;
+	Bat *bat;
+	IronMan *ironman;
+
 	Matrix *Map;
 	SceneMain(int _nCmdShow);
-	~SceneMain();	
-	
-protected:	
+	~SceneMain();
+
+protected:
 	virtual void RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t);
 	virtual void ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int Delta);
 	virtual void LoadResources(LPDIRECT3DDEVICE9 d3ddv);
