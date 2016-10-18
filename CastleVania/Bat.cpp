@@ -19,14 +19,12 @@ void Bat::Update(int t)
 	x += Vx;
 	y = sin(x*0.03)*41.3 + 200;
 	
-	if (x <= 0) 
-		this->MoveRigh();
-
-	if (x >= 1025) 
-		this->MoveLeft();
-
 	if (IsMoving != 0)
 	{
+		if (x <= 0)
+			this->MoveRigh();
+		if (x >= 1025)
+			this->MoveLeft();
 		if (ObjectSprite->_index == 0)
 			ObjectSprite->_index++;
 		ObjectSprite->Update(t);

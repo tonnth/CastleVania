@@ -11,8 +11,11 @@ void SceneMain::RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t)
 
 
 	simon->Update(t);
-	if (simon->GetX() >= 500)
+	/*if (simon->GetX() >= 500)
+	{
 		bat->MoveLeft();
+		ironman->MoveLeft();
+	}*/
 	medusa->Update(t);
 	bat->Update(t);
 	ironman->Update(t);
@@ -34,11 +37,14 @@ void SceneMain::ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int Delta)
 	if (IsKeyDown(DIK_LEFT))
 	{
 		simon->MoveLeft();
+		
 	}
 	else
 		if (IsKeyDown(DIK_RIGHT))
 		{
 			simon->MoveRigh();
+			bat->MoveLeft();
+			ironman->MoveLeft();
 		}
 		else
 		{

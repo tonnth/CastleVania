@@ -19,13 +19,17 @@ void IronMan::Update(int t)
 	x += Vx;
 	y += Vy;
 
-	if (x <= 500)
-		this->MoveRigh();
 
-	if (x >= 1025)
-		this->MoveLeft();
+	if (IsMoving != 0)
+	{
+		if (x <= 0)
+			this->MoveRigh();
 
-	if (IsMoving != 0)	ObjectSprite->Update(t);
+		if (x >= 1025)
+			this->MoveLeft();
+
+		ObjectSprite->Update(t);
+	}
 	else ObjectSprite->SelectIndex(IRONMAN_STOP_IMAGE);
 
 }

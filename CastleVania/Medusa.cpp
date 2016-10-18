@@ -22,7 +22,12 @@ void Medusa::Update(int t)
 	if (x <= 0) this->MoveRigh();
 	if (x >= 1025) this->MoveLeft();
 
-	if (IsMoving != 0) ObjectSprite->Update(t);
+	if (IsMoving != 0)
+	{
+		if (x <= 0) this->MoveRigh();
+		if (x >= 1025) this->MoveLeft();
+		ObjectSprite->Update(t);
+	}
 	else ObjectSprite->SelectIndex(MEDUSA_STOP_IMAGE);
 
 }

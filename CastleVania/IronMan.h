@@ -13,7 +13,7 @@
 #define IRONMAN_X 50
 #define IRONMAN_Y 0
 
-#define IRONMAN_VX 4.0f
+#define IRONMAN_VX 3.0f
 
 #define IRONMAN_GRAVITY 20
 #define IRONMAN_FALL 180
