@@ -2,7 +2,7 @@
 
 GCamera::GCamera()
 {
-	viewport.x = 1;
+	viewport.x = 100;
 	viewport.y = G_ScreenHeight;
 }
 

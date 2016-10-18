@@ -3,6 +3,7 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+	//afdsfasdfadfasdfasdfasdfsa
 	SceneMain *game = new SceneMain(nCmdShow);
 	game->InitGame();
 	game->GameRun();

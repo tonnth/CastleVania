@@ -9,6 +9,8 @@
 #define SIMON_TREND 0
 #define SIMON_FRAME 100
 #define SIMON_STOP_IMAGE 3
+#define SIMON_X 50
+#define SIMON_Y 0
 
 #define SIMON_VX 1.0f
 #define SIMON_VX_STAIR 43	

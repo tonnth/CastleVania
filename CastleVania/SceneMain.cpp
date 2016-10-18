@@ -13,6 +13,7 @@ void SceneMain::RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t)
 
 	G_SpriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
 
+	Map->DrawMap();
 	simon->DrawObject();
 
 	G_SpriteHandler->End();
@@ -37,7 +38,9 @@ void SceneMain::ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int Delta)
 
 void SceneMain::LoadResources(LPDIRECT3DDEVICE9 d3ddv)
 {
-	simon = new Simon(200, 200);
+	Map = new Matrix();
+	Map->LoadMap();
+	simon = new Simon();
 }
 
 void SceneMain::OnKeyDown(int KeyCode)

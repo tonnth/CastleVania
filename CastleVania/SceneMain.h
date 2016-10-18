@@ -5,12 +5,13 @@
 #include "GSprite.h"
 #include "Object.h"
 #include "Simon.h"
+#include "Matrix.h"
 
 class SceneMain: public CGame
 {
 public: 	
 	Simon *simon;
-
+	Matrix *Map;
 	SceneMain(int _nCmdShow);
 	~SceneMain();	
 	

@@ -1,24 +1,51 @@
-﻿Build started 17/10/2016 4:09:37 CH.
-     1>Project "C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\CastleVania\CastleVania.vcxproj" on node 2 (Build target(s)).
+﻿Build started 18/10/2016 2:06:24 CH.
+     1>Project "C:\Users\hoang\Desktop\CastleVania\CastleVania\CastleVania.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include" /AI"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Simon.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include" /AI"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GAudio.cpp GCamera.cpp dsutil.cpp Matrix.cpp Object.cpp SceneMain.cpp Game.cpp Global.cpp main.cpp GSprite.cpp GTexture.cpp Simon.cpp Utils.cpp
+         Utils.cpp
          Simon.cpp
          c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(8): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(9): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(21): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(22): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(35): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(52): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(57): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(62): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(67): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\hoang\desktop\tailieuthbuoi1\template\castlevania\simon.cpp(83): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\simon.cpp(36): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\simon.cpp(37): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         GTexture.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         GSprite.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(91): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(92): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(108): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(127): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(162): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gsprite.cpp(163): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         main.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Global.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Game.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         SceneMain.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Object.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\hoang\desktop\castlevania\castlevania\object.cpp(14): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\object.cpp(19): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         Matrix.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         dsutil.cpp
+         GCamera.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\hoang\desktop\castlevania\castlevania\gcamera.cpp(6): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gcamera.cpp(22): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\users\hoang\desktop\castlevania\castlevania\gcamera.cpp(32): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+         GAudio.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Generating Code...
+     1>c:\users\hoang\desktop\castlevania\castlevania\game.cpp(61): warning C4715: 'CGame::InitWindow' : not all control paths return a value
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\Debug\CastleVania.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx9.lib dxerr.lib dsound.lib dxguid.lib winmm.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\Debug\CastleVania.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\Debug\CastleVania.lib" /MACHINE:X86 Debug\GAudio.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hoang\Desktop\CastleVania\Debug\CastleVania.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx9.lib dxerr.lib dsound.lib dxguid.lib winmm.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hoang\Desktop\CastleVania\Debug\CastleVania.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hoang\Desktop\CastleVania\Debug\CastleVania.lib" /MACHINE:X86 Debug\GAudio.obj
          Debug\GCamera.obj
          Debug\dsutil.obj
+         Debug\Matrix.obj
          Debug\Object.obj
          Debug\SceneMain.obj
          Debug\Game.obj
@@ -28,9 +55,9 @@
          Debug\GTexture.obj
          Debug\Simon.obj
          Debug\Utils.obj
-         CastleVania.vcxproj -> C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\Debug\CastleVania.exe
-     1>Done Building Project "C:\Users\hoang\Desktop\TaiLieuTHBuoi1\Template\CastleVania\CastleVania.vcxproj" (Build target(s)).
+         CastleVania.vcxproj -> C:\Users\hoang\Desktop\CastleVania\Debug\CastleVania.exe
+     1>Done Building Project "C:\Users\hoang\Desktop\CastleVania\CastleVania\CastleVania.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.81
+Time Elapsed 00:00:11.06

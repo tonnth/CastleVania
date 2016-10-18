@@ -3,6 +3,7 @@
 
 #include <d3dx9.h>
 #include "GSprite.h"
+#include "GCamera.h"
 
 class Object
 {
@@ -18,6 +19,7 @@ protected:
 
 	float Speed; // Tốc độ
 	GSprite *ObjectSprite;
+	GCamera *Trans;
 
 public:
 	Object();

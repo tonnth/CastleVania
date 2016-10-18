@@ -1,9 +1,10 @@
 #include "Simon.h"
 
-Simon::Simon(float x, float y)
+Simon::Simon()
 {
-	this->x = x;
-	this->y = y;
+	//D3DXVECTOR2 PosTrans = Trans->Transform(SIMON_X, SIMON_Y);
+	this->x = 50;//PosTrans.x;
+	this->y = 254;//PosTrans.y;
 
 	Vx = 0;
 	Vy = 0;

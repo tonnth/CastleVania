@@ -192,20 +192,20 @@ void CGame::OnKeyDown(int KeyCode) { }
 
 void GameDraw(int deltaTime)
 {
-	if (G_Device->BeginScene()) 
-	{
-		// Clear back buffer with BLACK
-		G_Device->ColorFill(G_BackBuffer,NULL,D3DCOLOR_XRGB(0,0,0));
-		G_SpriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
-		//----- start drawing
+	//if (G_Device->BeginScene()) 
+	//{
+	//	// Clear back buffer with BLACK
+	//	G_Device->ColorFill(G_BackBuffer,NULL,D3DCOLOR_XRGB(0,0,0));
+	//	G_SpriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
+	//	//----- start drawing
 
 
-		//---- end drawing
-		G_SpriteHandler->End();
-		G_Device->EndScene();
-	}
+	//	//---- end drawing
+	//	G_SpriteHandler->End();
+	//	G_Device->EndScene();
+	//}
 
-	G_Device->Present(NULL,NULL,NULL,NULL);
+	//G_Device->Present(NULL,NULL,NULL,NULL);
 }
 
 // Main game message loop
